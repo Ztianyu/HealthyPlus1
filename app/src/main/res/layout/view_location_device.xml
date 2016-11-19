@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/itemDevice1"
+        layout="@layout/item_device" />
+
+    <include
+        android:id="@+id/itemDevice2"
+        layout="@layout/item_device" />
+
+    <include
+        android:id="@+id/itemDevice3"
+        layout="@layout/item_device" />
+
+    <include
+        android:id="@+id/itemDevice4"
+        layout="@layout/item_device" />
+
+</LinearLayout>

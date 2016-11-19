@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/textDiseaseName"
+        android:layout_width="96dp"
+        android:layout_height="32dp"
+        android:background="@drawable/shape_circle_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="心血管类"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <GridView
+        android:id="@+id/gridViewDiseases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:horizontalSpacing="24dp"
+        android:scrollbars="none"
+        android:numColumns="3"></GridView>
+
+</LinearLayout>

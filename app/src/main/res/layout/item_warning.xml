@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/img_warning" />
+
+            <TextView
+                android:id="@+id/textWarningName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="糖尿病预警"
+                android:textColor="@color/colorYellow"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预警日期："
+                android:textColor="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/textWarningDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-11-05"
+                android:textColor="@color/colorGray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预警情况："
+                android:textColor="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/textWarningContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您这周的血糖数据连续三次超出正常值范围，请及时联系您的服务医生。"
+                android:textColor="@color/colorGray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_line"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/itemWarningTip1"
+                    style="@style/AssessmentTabTitle"
+                    android:text="分类" />
+
+                <TextView
+                    android:id="@+id/itemWarningTip2"
+                    style="@style/AssessmentTabTitle"
+                    android:text="血糖值" />
+
+                <TextView
+                    android:id="@+id/itemWarningTip3"
+                    style="@style/AssessmentTabTitle"
+                    android:text="时间" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGray"></View>
+
+            <com.zty.healthy.healthyplus.widget.WholeListView
+                android:id="@+id/listWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"></com.zty.healthy.healthyplus.widget.WholeListView>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

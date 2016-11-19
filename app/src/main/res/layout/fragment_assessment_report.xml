@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textReportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="评估报告"
+            android:textColor="@color/colorTextColor"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_line"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    style="@style/AssessmentTabTitle"
+                    android:text="评估分类" />
+
+                <TextView
+                    style="@style/AssessmentTabTitle"
+                    android:text="评估分数" />
+
+                <TextView
+                    style="@style/AssessmentTabTitle"
+                    android:text="评估结果" />
+
+                <TextView
+                    style="@style/AssessmentTabTitle"
+                    android:text="评估时间" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDivider"></View>
+
+            <com.zty.healthy.healthyplus.widget.WholeListView
+                android:id="@+id/listReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"></com.zty.healthy.healthyplus.widget.WholeListView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="医生建议:"
+            android:textColor="@color/colorTextColor"
+            android:textSize="16sp" />
+
+        <com.zty.healthy.healthyplus.widget.WholeListView
+            android:id="@+id/listAdvise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"></com.zty.healthy.healthyplus.widget.WholeListView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="医生服务:"
+            android:textColor="@color/colorTextColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textServiceNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="    根据您的评估情况，建议您配合家庭医生，长期对您的健康进行关注、指导和一定的医学干预。由专业的医疗团队实时的为您的健康保驾护航。
+            \n   我们将为您提供以下服务：\n    1、健康指导   \n    2、医疗指导"
+            android:textColor="@color/colorBlack1"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRecommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推 荐"
+                android:textSize="18sp"
+                android:paddingTop="4dp"
+                android:textColor="@color/colorBtn"
+                android:background="@mipmap/btn_advice" />
+
+            <Button
+                android:id="@+id/btnChoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:text="自 选"
+                android:textSize="18sp"
+                android:paddingTop="4dp"
+                android:textColor="@color/colorBtn"
+                android:background="@mipmap/btn_advice" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

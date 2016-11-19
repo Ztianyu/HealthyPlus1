@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.siyamed.shapeimageview.CircularImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/imgCircleImg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@mipmap/icon_user"
+    app:siBorderAlpha="0.5"
+    app:siBorderColor="#E9CDA7"
+    app:siBorderWidth="1dp">
+
+</com.github.siyamed.shapeimageview.CircularImageView>

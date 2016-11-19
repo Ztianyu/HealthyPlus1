@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorBackground">#F4EDDC</color>
+
+    <color name="transparent">@android:color/transparent</color>
+    <color name="white">#ffffff</color>
+
+    <color name="colorBottomNormal">#57942a</color>
+
+    <color name="colorBottomSelect">#3c7711</color>
+
+    <color name="colorBottomTextSelect">#95ff4f</color>
+
+    <color name="colorTextColor">#333333</color>
+
+    <color name="colorDivider">#666666</color>
+
+    <color name="colorBlack1">#999999</color>
+
+    <color name="colorBlack2">#333333</color>
+
+    <color name="colorGray1">#d1c5a8</color>
+
+    <color name="colorRed1">#e70404</color>
+
+    <color name="colorGray">#acacac</color>
+
+    <color name="colorBtn">#945500</color>
+
+    <color name="colorYellow">#fab104</color>
+
+    <color name="colorYellow1">#ffe05b</color>
+
+    <color name="colorTab">#34690c</color>
+
+    <color name="colorBrown">#ba9f81</color>
+
+    <color name="legendLineColor1">#FF4081</color>
+    <color name="legendLineColor2">#0099CC</color>
+    <color name="legendLineColor3">#CC0033</color>
+
+</resources>

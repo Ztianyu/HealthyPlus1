@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="32dp">
+
+            <TextView
+                android:id="@+id/btnHomeFun1"
+                style="@style/HomeFunction"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@mipmap/back_home_tip1"
+                android:drawableTop="@mipmap/ic_home_tip1"
+                android:text="@string/homeFunction1" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnHomeFun1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/homeMargin">
+
+                <com.zty.healthy.healthyplus.widget.MyViewPager
+                    android:id="@+id/viewPagerAccount"
+                    android:layout_width="@dimen/homeAccountSize"
+                    android:layout_height="@dimen/homeAccountSize"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="8dp"></com.zty.healthy.healthyplus.widget.MyViewPager>
+
+                <ImageView
+                    android:id="@+id/btnLast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/viewPagerAccount"
+                    android:background="@mipmap/ic_last" />
+
+                <ImageView
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/viewPagerAccount"
+                    android:background="@mipmap/ic_next" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textAccountName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutAccount"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/back_account_name"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnHomeFun3"
+                style="@style/HomeFunction"
+                android:layout_below="@id/textAccountName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/homeMargin"
+                android:background="@mipmap/back_home_tip3"
+                android:drawableTop="@mipmap/ic_home_tip3"
+                android:text="@string/homeFunction3" />
+
+            <TextView
+                android:id="@+id/btnHomeFun4"
+                style="@style/HomeFunction"
+                android:layout_below="@id/btnHomeFun1"
+                android:layout_marginTop="@dimen/homeMargin"
+                android:layout_toLeftOf="@id/layoutAccount"
+                android:background="@mipmap/back_home_tip4"
+                android:drawableTop="@mipmap/ic_home_tip4"
+                android:text="@string/homeFunction4" />
+
+            <TextView
+                android:id="@+id/btnHomeFun2"
+                style="@style/HomeFunction"
+                android:layout_below="@id/btnHomeFun1"
+                android:layout_marginTop="@dimen/homeMargin"
+                android:layout_toRightOf="@id/layoutAccount"
+                android:background="@mipmap/back_home_tip2"
+                android:drawableTop="@mipmap/ic_home_tip2"
+                android:text="@string/homeFunction2" />
+
+            <TextView
+                android:id="@+id/btnHomeFun5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/btnHomeFun3"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@mipmap/back_home_function"
+                android:drawableLeft="@mipmap/ic_home_fun1"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:text="@string/homeFunction5"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/btnHomeFun6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/btnHomeFun3"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@mipmap/back_home_function"
+                android:drawableLeft="@mipmap/ic_home_fun2"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:text="@string/homeFunction6"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

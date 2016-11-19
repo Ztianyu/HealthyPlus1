@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textAssessmentName"
+        style="@style/AssessmentTabContent"
+        android:maxLines="2"
+        android:text="老年社会评估" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorDivider" />
+
+    <TextView
+        android:id="@+id/textAssessmentPro"
+        style="@style/AssessmentTabContent"
+        android:maxLines="2"
+        android:text="社会支持评定量表（SSRS）" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorDivider" />
+
+    <TextView
+        android:id="@+id/textAssessmentResult"
+        style="@style/AssessmentTabContent"
+        android:text="支持度一般" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorDivider" />
+
+    <TextView
+        android:id="@+id/textAssessmentTime"
+        style="@style/AssessmentTabContent"
+        android:text="2016-06-15 12:10" />
+
+</LinearLayout>

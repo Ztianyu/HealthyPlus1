@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/imgAssessment"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:alpha="1"
+            android:background="@mipmap/icon_user"
+            app:siBorderAlpha="0.5"
+            app:siBorderColor="#E9CDA7"
+            app:siBorderWidth="1dp" />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/expandList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="#E9CDA7"
+        android:dividerHeight="0.5dp"></ExpandableListView>
+</LinearLayout>

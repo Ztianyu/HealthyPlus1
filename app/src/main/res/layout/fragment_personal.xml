@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/itemPerson1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personItemHeight"
+            android:layout_marginTop="16dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgPerson1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@mipmap/img_warning" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/imgPerson1"
+                android:text="账号管理"
+                android:textColor="@color/colorTextColor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/ic_navigate_next_black_24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorDivider"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorDivider"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemPerson2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personItemHeight"
+            android:layout_marginTop="16dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgPerson2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@mipmap/img_warning" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/imgPerson2"
+                android:text="我的医生"
+                android:textColor="@color/colorTextColor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/ic_navigate_next_black_24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+
+                android:layout_alignParentTop="true"
+                android:background="@color/colorDivider"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorGray1"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemPerson3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personItemHeight"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgPerson3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@mipmap/img_warning" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/imgPerson3"
+                android:text="我的订单"
+                android:textColor="@color/colorTextColor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/ic_navigate_next_black_24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorDivider"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemPerson4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personItemHeight"
+            android:layout_marginTop="16dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgPerson4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@mipmap/img_warning" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/imgPerson4"
+                android:text="设备绑定"
+                android:textColor="@color/colorTextColor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/ic_navigate_next_black_24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+
+                android:layout_alignParentTop="true"
+                android:background="@color/colorDivider"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorGray1"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemPerson5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personItemHeight"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgPerson5"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@mipmap/img_warning" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/imgPerson5"
+                android:text="意见反馈"
+                android:textColor="@color/colorTextColor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/ic_navigate_next_black_24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorDivider"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemPerson6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personItemHeight"
+            android:layout_marginTop="16dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgPerson6"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@mipmap/img_warning" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/imgPerson6"
+                android:text="关于我们"
+                android:textColor="@color/colorTextColor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/ic_navigate_next_black_24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+
+                android:layout_alignParentTop="true"
+                android:background="@color/colorDivider"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorGray1"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemPerson7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personItemHeight"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgPerson7"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@mipmap/img_warning" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/imgPerson7"
+                android:text="版本信息"
+                android:textColor="@color/colorTextColor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/ic_navigate_next_black_24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorDivider"></View>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textSchemeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="糖尿病预警处理方案"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textSchemeTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="2016-11-15 20:36"
+            android:textColor="@color/colorGray"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:minHeight="180dp">
+
+            <TextView
+                android:id="@+id/textSchemeContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="32dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="8dp"
+                android:text="张阿姨，您好：\n     根据您最近的血糖数据来看，您的血糖值普遍偏高，请注意以下事项：\n    1、少吃甜食或糖分含量过高的食品\n    2、饭后少吃水果，尤其是葡萄、西瓜之类糖分含量高的\n    3、饭后尽量散步半个小时，加强体育锻炼    " />
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textSchemeDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主治医师：崔峰"
+                android:textColor="@color/colorBlack2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imgSchemeWeiXin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_weixin" />
+
+            <ImageView
+                android:id="@+id/imgSchemeVideoCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@mipmap/ic_video_call" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

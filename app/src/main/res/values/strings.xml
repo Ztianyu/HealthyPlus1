@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HealthyPlus</string>
+
+    <string name="homeFunction1">健康评估</string>
+    <string name="homeFunction2">健康检测</string>
+    <string name="homeFunction3">健康方案</string>
+    <string name="homeFunction4">健康预警</string>
+
+    <string name="homeFunction5">电子定位</string>
+    <string name="homeFunction6">跌倒报警</string>
+</resources>

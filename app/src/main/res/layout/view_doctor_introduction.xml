@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/colorGray"
+            android:gravity="center"
+            android:text="医生简介"
+            android:textColor="@color/white"
+            android:textSize="16sp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/imgOrderDoctor"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="1"
+                android:background="@mipmap/icon_user"
+                app:siBorderAlpha="0.5"
+                app:siBorderColor="#E9CDA7"
+                app:siBorderWidth="1dp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/textOrderDoctorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="冯程"
+                    android:textColor="#33130a"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textOrderDoctorTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/textDoctorName"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/textOrderDoctorName"
+                    android:text="主治医师"
+                    android:textColor="#b87e63" />
+
+                <TextView
+                    android:id="@+id/textOrderDoctorNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/textOrderDoctorName"
+                    android:layout_marginTop="8dp"
+                    android:singleLine="true"
+                    android:text="擅长慢性病的管理和防止，尤其是在心脑血管方面，有很高的权威"
+                    android:textColor="#466398" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnOrderVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@mipmap/btn_advice"
+                android:paddingTop="4dp"
+                android:text="视频简介"
+                android:textColor="@color/colorBtn"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

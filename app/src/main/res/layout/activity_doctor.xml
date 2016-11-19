@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragmentDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroupDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mainMenuHeight"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioBtnDoctor1"
+            style="@style/MyRadioButton"
+            android:checked="true"
+            android:text="个 人" />
+
+        <RadioButton
+            android:id="@+id/radioBtnDoctor2"
+            style="@style/MyRadioButton"
+            android:text="团 队" />
+
+    </RadioGroup>
+
+</LinearLayout>

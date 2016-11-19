@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/radioGroupSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/radioSugarBefore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="餐前" />
+
+            <RadioButton
+                android:id="@+id/radioSugarAfter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="餐后" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:background="@mipmap/btn_advice"
+            android:text="手动记录"
+            android:textColor="@color/colorBtn"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_line"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/layoutDataTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerTableData"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dlLocation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.home.LocationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fragmentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroupLocation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mainMenuHeight"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonLocation1"
+                style="@style/MyRadioButton"
+                android:checked="true"
+                android:text="当前位置" />
+
+            <RadioButton
+                android:id="@+id/radioButtonLocation2"
+                style="@style/MyRadioButton"
+                android:text="历史轨迹" />
+
+            <RadioButton
+                android:id="@+id/radioButtonLocation3"
+                style="@style/MyRadioButton"
+                android:text="设备信息" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewAccountLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/colorBackground"
+        android:divider="@color/colorDivider"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:scrollbars="none"></ListView>
+
+
+</android.support.v4.widget.DrawerLayout>
+
+

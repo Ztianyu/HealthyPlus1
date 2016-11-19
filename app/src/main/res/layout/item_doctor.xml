@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/imgDoctor"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:alpha="1"
+        android:background="@mipmap/icon_user"
+        app:siBorderAlpha="0.5"
+        app:siBorderColor="#E9CDA7"
+        app:siBorderWidth="1dp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="冯程"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="16sp"
+            android:textColor="#33130a"/>
+
+        <TextView
+            android:id="@+id/textDoctorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主治医师"
+            android:layout_alignBottom="@id/textDoctorName"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/textDoctorName"
+            android:layout_marginLeft="8dp"
+            android:textColor="#b87e63"/>
+
+        <TextView
+            android:id="@+id/textDoctorNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="擅长慢性病的管理和防止，尤其是在心脑血管方面，有很高的权威"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/textDoctorName"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:textColor="#466398"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnDoctorOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@mipmap/btn_advice"
+        android:paddingTop="4dp"
+        android:text="预 约"
+        android:textColor="@color/colorBtn"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

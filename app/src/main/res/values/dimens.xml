@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="mainMenuHeight">48dp</dimen>
+    <dimen name="homeAccountSize">72dp</dimen>
+
+    <dimen name="homeMargin">16dp</dimen>
+
+    <dimen name="accountIconSize">48dp</dimen>
+
+    <dimen name="personItemHeight">40dp</dimen>
+
+    <dimen name="resetPwWidth">96dp</dimen>
+</resources>

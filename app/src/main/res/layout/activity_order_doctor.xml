@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_doctor_introduction"></include>
+
+        <include layout="@layout/view_doctor_service"></include>
+
+        <include layout="@layout/view_doctor_evaluate"></include>
+
+        <include layout="@layout/view_doctor_order"></include>
+
+        <Button
+            android:id="@+id/btnDoctorPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@mipmap/btn_advice"
+            android:paddingTop="4dp"
+            android:text="购 买"
+            android:textColor="@color/colorBtn"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

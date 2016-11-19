@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".ui.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragmentHome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mainMenuHeight"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            style="@style/MyRadioButton"
+            android:checked="true"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            style="@style/MyRadioButton"
+            android:text="医生" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            style="@style/MyRadioButton"
+            android:text="商品" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            style="@style/MyRadioButton"
+            android:text="健坛" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            style="@style/MyRadioButton"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>
